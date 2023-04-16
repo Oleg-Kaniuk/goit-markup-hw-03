@@ -1,0 +1,221 @@
+:root {
+  --primary-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+  --primary-text-color: #434455;
+  --secondary-text-color: #2e2f42;
+  --primary-bg-color: #ffffff;
+  --secondary-bg-color: #2e2f42;
+  --primary-accent-color: #404bbf;
+  --secondary-accent-color: #ffffff;
+}
+
+body {
+  font-family: var(--primary-font);
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+  background-color: var(--primary-bg-color);
+}
+
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+
+/* ===========================HEADER=========================== */
+
+/* =============Logo============= */
+
+.logo {
+  font-family: var(--secondary-font);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #4d5ae5;
+}
+
+.logo-light-theme {
+  color: var(--secondary-text-color);
+}
+.logo-dark-theme {
+  color: #f4f4fd;
+}
+
+/* =============Navigation list============= */
+
+.menu .link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+
+  color: var(--secondary-text-color);
+}
+
+.menu .link:hover,
+.menu .link:focus {
+  color: var(--primary-accent-color);
+}
+
+/* =============Contact list============= */
+
+.address {
+  font-style: normal;
+}
+
+.address .link {
+  font-size: 16px;
+  line-height: 1.5;
+
+  color: var(--primary-text-color);
+}
+
+.contact .link:hover,
+.contact .link:focus {
+  color: var(--primary-accent-color);
+}
+
+/* ===========================HERO=========================== */
+
+.hero {
+  background-color: var(--secondary-bg-color);
+}
+
+.main-title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+
+  letter-spacing: 0.02em;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.modal-button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+
+  letter-spacing: 0.04em;
+
+  color: #ffffff;
+  background-color: #4d5ae5;
+  cursor: pointer;
+}
+.modal-button:hover,
+.modal-button:focus {
+  background-color: var(--primary-accent-color);
+}
+
+/* .modal-button:active {
+  background-color: var(--primary-accent-color);
+} */
+
+/* ===========================OTHER SECTION=========================== */
+
+/* =============Title============= */
+
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: capitalize;
+
+  color: var(--secondary-text-color);
+}
+
+/* =============Subtitle============= */
+
+.section-features .section-subtitle,
+.section-team .section-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+}
+
+.section-team-item {
+  background-color: var(--primary-bg-color);
+}
+
+/* =============Text============= */
+
+.section-features .section-text,
+.section-team .section-text {
+  font-size: 16px;
+  line-height: 1.5;
+
+  /* color: var(--primary-text-color); */
+}
+
+.section.team {
+  background-color: #f4f4fd;
+}
+
+/* ===========================FOOTER=========================== */
+
+.footer {
+  background-color: var(--secondary-bg-color);
+}
+.footer-text {
+  font-size: 16px;
+  line-height: 1.5;
+
+  color: #f4f4fd;
+}
+
+/* ===========================PORTFOLIO MAIN SECTION=========================== */
+
+/* .portfolio-title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+
+  color: #ffffff;
+} */
+
+.filter .filter-button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+
+  letter-spacing: 0.04em;
+
+  color: #4d5ae5;
+  background-color: #f4f4fd;
+  cursor: pointer;
+}
+
+.filter .filter-button:hover,
+.filter .filter-button:focus {
+  color: var(--secondary-accent-color);
+  background-color: var(--primary-accent-color);
+}
+
+.collection .section-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+}
+
+.collection .section-text {
+  font-size: 16px;
+  line-height: 1.5;
+
+  color: var(--primary-text-color);
+}
