@@ -1,3 +1,13 @@
+/* html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+} */
+
 :root {
   --primary-font: "Roboto", sans-serif;
   --secondary-font: "Raleway", sans-serif;
@@ -15,6 +25,27 @@ body {
   color: var(--primary-text-color);
   background-color: var(--primary-bg-color);
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
 
 .list {
   list-style: none;
@@ -23,15 +54,37 @@ body {
   text-decoration: none;
 }
 
+.container {
+  width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 120px;
+}
+
 /* ======================================================================================================
 ==============================================    HEADER      ===========================================
 ====================================================================================================== */
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-page {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e7e9fc;
+}
 
 /* =========================================================
 =======================    LOGO    =========================
 ========================================================= */
 
 .logo {
+  margin-right: 76px;
+
   font-family: var(--secondary-font);
   font-weight: 800;
   font-size: 18px;
@@ -54,6 +107,20 @@ body {
 =================    NAVIGATION LIST    ====================
 ========================================================= */
 
+.nav-menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 40px;
+}
+
 .menu .link {
   font-weight: 500;
   font-size: 16px;
@@ -73,6 +140,16 @@ body {
 
 .address {
   font-style: normal;
+  margin-left: auto;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+}
+
+.contact-item:not(:last-child) {
+  margin-right: 40px;
 }
 
 .contact .link {
@@ -93,9 +170,17 @@ body {
 
 .hero {
   background-color: var(--secondary-bg-color);
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .main-title {
+  display: block;
+  max-width: 496px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 48px;
+
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
@@ -107,6 +192,16 @@ body {
 }
 
 .modal-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border: 0;
+  border-radius: 4px;
+
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -131,6 +226,13 @@ body {
 ========================================    OTHER SECTION      ==========================================
 ====================================================================================================== */
 
+.features-container {
+  padding-top: 120px;
+}
+
+.services-container .section-title {
+  margin-bottom: 72px;
+}
 /* =========================================================
 ====================    TITLE    ===========================
 ========================================================= */
