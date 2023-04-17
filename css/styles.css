@@ -243,6 +243,9 @@ img {
   align-items: center;
 }
 
+.section-features > .section-features-item {
+  flex-basis: calc((100% - 72px) / 4);
+}
 .section-features-item:not(:last-child) {
   margin-right: 24px;
 }
