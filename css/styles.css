@@ -72,9 +72,14 @@ img {
 }
 
 .header-page {
+  /* padding-top: 24px;
+  padding-bottom: 24px; */
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.menu-item {
   padding-top: 24px;
   padding-bottom: 24px;
-  border-bottom: 1px solid #e7e9fc;
 }
 
 /* =========================================================
@@ -346,9 +351,10 @@ img {
   padding-bottom: 100px;
 }
 
-.logo-dark-theme {
+.footer-container .logo {
   display: inline-block;
   margin-bottom: 16px;
+  margin-right: 0;
 }
 
 .footer-text {
@@ -438,6 +444,11 @@ img {
   border-radius: 4px;
 }
 
+.filter-button:hover,
+.filter-button:focus {
+  border: 1px solid transparent;
+}
+
 .collection {
   display: flex;
   flex-wrap: wrap;
@@ -450,13 +461,21 @@ img {
   margin-bottom: 48px;
 }
 
-.collection-item {
+/* .collection > .collection-item {
+  flex-basis: calc((100% - 48px) / 3);
+} */
+
+/* .collection-item {
   border-bottom: 1px solid #e7e9fc;
-}
+} */
 
 .card-info {
   padding-top: 32px;
   padding-bottom: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border: 1px solid #e7e9fc;
+  border-top: 0;
 }
 
 .collection .section-subtitle {
